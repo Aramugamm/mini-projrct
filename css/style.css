@@ -112,10 +112,18 @@ body {
   background-color: #fff;
   color: var(--bg);
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .shopping-cart.active {
   right: 0;
+}
+
+.shopping-cart .cart-items-container {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 1rem;
 }
 
 .shopping-cart .cart-item {
@@ -167,6 +175,12 @@ body {
   font-size: 1.6rem;
   margin-top: -1rem;
   text-align: center;
+}
+
+.shopping-cart .form-container {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid #ddd;
 }
 
 /* Checkout Form */
